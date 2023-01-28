@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER PAGE</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <style>
+        #topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#logo > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#logo span {
+    font-weight: 800;
+}
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -10px;
+}
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+#cart-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+  /* footer*************************************/
+
+  footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+    margin-top: 100px;
+ }
+ .footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+ }
+ .footer-link {
+text-decoration: none;
+color: white;
+display: block;
+margin-top: 12px;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-size: 14px;
+opacity: 0.8;
+}   
+footer > div:first-of-type {
+padding-left: 0;
+}
+footer > div {
+padding-left: 60px;
+padding-right: 60px;
+}
+
+  .order-confirm {
+    margin-top: 150px;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+.order-confirm img {
+    height: 300px;
+}
+.rightmenu i{
+  cursor: pointer;
+}
+
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="topbar">
+           <div id="left-menu">
+               <div id="logo">
+                   <a href="/index.html">
+                       <span>shop</span>lane</a>
+               </div>
+               <a href="#clothing-section">Clothing</a>
+               <a href="#accessory-section">Accessories</a>
+           </div>
+           <div id="search-wrapper">
+               <i class="fas fa-search" aria-hidden="true"></i>
+               <input id="search-box" type="text" name="search"
+               placeholder="Search for Clothingand Accessories">
+           </div>
+           <div id="right-menu">
+               <div id="cart-wrapper">
+                   <p id="cart-count">0</p>
+                       <i class="fas fa-shopping-cart" aria-hidden="true"></i>   
+               </div>
+           <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg">
+           </div>
+        </nav>
+       </header>
+
+       <div class="order-confirm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8-P0iiP5pGt-7Uso3xLA9UIH0QqKoxHMLnRIJlaaLgaSfu9HalRrtE2nNKLaMVlXnKI&usqp=CAU" alt="">
+        <h3>Order Placed Successfully!!</h3>
+        <p>We have sent you an email with the order details</p>
+      </div>
+
+      <img id="edyoda-projects-logo" src="logo.png" alt="EdYoda Projects Logo">
+       <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="order.js"></script> 
+</body>
+</html>   
+</body>
+</html>

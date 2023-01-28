@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT PAGE</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <style>
+                #topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#logo > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#logo span {
+    font-weight: 800;
+}
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -10px;
+}
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+#cart-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+  /* footer*************************************/
+
+  footer {
+           width: 100%;
+           background-color: #1c1b1e;
+           display: flex;
+           justify-content: center;
+           box-sizing: border-box;
+           padding: 4% 8%;
+           margin-top: 100px;
+        }
+        .footer-heading {
+           text-transform: uppercase;
+           font-weight: 600;
+           font-size: 16px;
+           color: white;
+           opacity: 0.9;
+           letter-spacing: 1px;
+        }
+        .footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}   
+   footer > div:first-of-type {
+    padding-left: 0;
+   }
+    footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+/*********************************/
+main{
+  width: 100%;
+  min-height: 80vh;
+  box-sizing: border-box;
+  margin-top: 100px;
+  padding-bottom: 8%;
+}
+#checkout-section{
+  padding: 2% 8%;
+  box-sizing: border-box;
+}
+#heading{
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 48px;
+}
+#selected-products{
+  display: flex;
+  justify-content: start;
+}
+#product-cards{
+  width: 50%;
+}
+#selected-products > div:last-of-type{
+  width: 50%;
+  height: fit-content;
+  margin-top: 48px;
+  margin-left: 3%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  padding: 16px;
+}
+.total-items{
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.product-card{
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 600px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.product-img{
+  width: 80px;
+  min-width: 80px;
+  border-radius: 5px;
+  margin-right: 16px;
+}
+.product-card  h4{
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.product-card p{
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.section-heading{
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+#total-cost{
+  color: black;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+#place-order-btn{
+  background-color: #009688;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 18px 36px;
+  border-radius: 6px;
+  margin-top: 36px;
+  font-weight: 600;
+  color: white;
+}
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="topbar">
+           <div id="left-menu">
+               <div id="logo">
+                   <a href="/index.html">
+                       <span>shop</span>lane</a>
+               </div>
+               <a href="#clothing-section">Clothing</a>
+               <a href="#accessory-section">Accessories</a>
+           </div>
+           <div id="search-wrapper">
+               <i class="fas fa-search" aria-hidden="true"></i>
+               <input id="search-box" type="text" name="search"
+               placeholder="Search for Clothingand Accessories">
+           </div>
+           <div id="right-menu">
+               <div id="cart-wrapper">
+                   <p id="cart-count">0</p>
+                       <i class="fas fa-shopping-cart" aria-hidden="true"></i>   
+               </div>
+           <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg">
+           </div>
+        </nav>
+       </header>
+
+       <main>
+        <section id="checkout-section">
+            <h1 id="heading">Checkout</h1>
+            <div id="selected-products">
+                <div id="product-cards">
+                    <h3 class="total-items">
+                        Total Items: <span id="item-count"></span>
+                    </h3>
+  
+                </div>
+                <div>
+                    <h3 class="section-heading">Total Amount</h3>
+                    <p>Amount: Rs<span id="total-cost"></span>
+                    </p>
+                    <button id="place-order-btn">Place Order</button>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <img id="edyoda-projects-logo" src="logo.png" alt="EdYoda Projects Logo">
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="checkout.js"></script>
+</body>
+</html>
